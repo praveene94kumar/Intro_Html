@@ -1,0 +1,51 @@
+/* Type Selector */
+h1,h2{
+    color: orange !important;
+}
+
+h1+h2{
+    color: aqua;
+ }
+
+ body{
+    color: black;
+ }
+
+/* Universal Selector */
+*{
+    color: darkmagenta;
+}
+
+/* id Selector for particular element */
+#para{
+    color: darkred;
+}
+
+/* class Selector for number of elements */
+.classSelector{
+    color: deeppink;
+}
+
+/* Child Selector */
+div>p{
+    color: lawngreen;
+}
+
+/* Descendant selector */
+div a{
+    color: gold;
+}
+
+/* Sibling Selector */
+h1~h4{
+    color: blanchedalmond;
+}
+ /* Adjacent sibling selector */
+ h1+h2{
+    color: aqua;
+ }
+
+ h1{
+    color: rgba(245, 76, 10, 0.726) !important;
+    background-color: rgba(193, 196, 188, 1);
+ }

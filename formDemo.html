@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="index.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="Username">
+                <b>Username</b>
+            </label>
+            <input type="text" name="username" id="Username" required>
+        </div>
+        <div>
+            <label for="Password">
+                <b>Password</b>
+            </label>
+            <input type="password" name="password" id="Password" required minlength="5" maxlength="10">
+        </div>
+        <div>
+            <label for="yearofbirth">Year Of Birth</label>
+            <input type="number" name="yearofbirth" id="yearofbirth" maxlength="4" min="1900" max="2023">
+        </div>
+        <div>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="dob" min="2015-01-01" max="2023-12-12">
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="Email">
+        </div>
+        <br>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea name="Comments" id="comments" cols="20" rows="5" placeholder="Comments"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="LA checkbox" id="License Aggreement">
+            <label for="License Aggreement">License Aggreement</label>
+        </div>
+        <div>
+            <input type="checkbox" name="TC checkbox" id="Terms&Conditions">
+            <label for="Terms&Conditions">Terms & Conditions</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <select name="state" id="state">
+                <option value="Tamil Nadu" label="TN"></option>
+                <option value="Andhra Pradesh" label="AP"></option>
+                <option value="Kerala" label="KL"></option>
+                <option value="Karnataka" label="KA"></option>
+                <option value="Telangana" label="TG"></option>
+            </select>
+        </div>
+        <div>
+            <label for="fileUpload">File Upload</label>
+            <input type="file" name="fileUpload" id="fileUpload">
+        </div>
+        <!-- <button type="submit">Submit</button> -->
+        <input type="image" src="/images/submit.png" id="submitImage" width="20" height="20">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
